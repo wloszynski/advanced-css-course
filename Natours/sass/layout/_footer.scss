@@ -4,10 +4,17 @@
     font-size: 1.4rem;
     color: $color-grey-light-1;
 
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
 
     &__logo-box {
         text-align: center;
         margin-bottom: 8rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 6rem;
+        }
     }
 
     &__logo {
@@ -16,9 +23,14 @@
     }
 
     &__navigation {
-        border-top: .1rem solid $color-grey-dark;
+        border-top: 0.1rem solid $color-grey-dark;
         padding-top: 2rem;
         display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
     }
     &__list {
         list-style: none;
@@ -48,10 +60,15 @@
         }
     }
 
-    &__copyright{
+    &__copyright {
         width: 80%;
-        border-top: .1rem solid $color-grey-dark;
+        border-top: 0.1rem solid $color-grey-dark;
         padding-top: 2rem;
-        float:right;
+        float: right;
+
+        @include respond(tab-port) {
+            width: 100%;
+            float: none;
+        }
     }
 }
