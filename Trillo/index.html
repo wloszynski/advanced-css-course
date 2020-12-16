@@ -15,17 +15,47 @@
   </head>
   <body>
     <div class="container">
-        <header class="header">
-            header
-        </header>
-        <div class="content">
-            <nav class="sidebar">
-                Navi
-            </nav>
-            <main class="hotel-view">
-                Hotel View
-            </main>
-        </div>
+      <header class="header">
+        <img src="img/logo.png" alt="trillo logo" class="logo" />
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search hotels"
+          />
+          <button class="search__button" placeholder="Search hotels">
+            <svg class="search__icon">
+              <use href="img/symbol-defs.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/symbol-defs.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/symbol-defs.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">30</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <img
+              src="img/user.jpg"
+              alt="Useer photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Jon</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">Navi</nav>
+        <main class="hotel-view">Hotel View</main>
+      </div>
     </div>
   </body>
 </html>
